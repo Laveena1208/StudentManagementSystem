@@ -29,7 +29,7 @@ class Charts  extends JFrame
 		try
 		{
 				DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-				Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","LAVEENA");
+				Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","");//"" enter password
 				String sql = "select* from addstudent";
 				Statement stmt = con.createStatement();
 				ResultSet rs = stmt.executeQuery(sql);
