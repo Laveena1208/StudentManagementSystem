@@ -10,7 +10,7 @@
         <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>  
         <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
         <property name="connection.username">system</property>  
-        <property name="connection.password">LAVEENA</property>  
+        <property name="connection.password">enter password here</property>  
         <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>  
     <mapping resource="student.hbm.xml"/>  
     </session-factory>  
