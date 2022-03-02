@@ -44,7 +44,7 @@ class DeleteFrame extends JFrame
 			try 
 			{  
 				DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-				Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "LAVEENA"); 
+				Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", ""); //"" enter password
 				
 				String sql = "delete from addstudent where rno = ?";
 				PreparedStatement stmt = con.prepareStatement(sql);
