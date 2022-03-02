@@ -26,7 +26,7 @@ public class ViewFrame extends JFrame
 					try
 					{
 						DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-						Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","LAVEENA");
+						Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","");//""enter password
 						
 
 						Statement stmt = con.createStatement();
